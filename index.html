@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Library</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="container">
+    <h1>My Library</h1>
+    <div class="stats" id="stats">
+      <div class="stat-item">
+        <h3 id="totalBooks">4</h3>
+        <p>Total Books</p>
+      </div>
+      <div class="stat-item">
+        <h3 id="totalBooks">2</h3>
+        <p>Books Read</p>
+      </div>
+      <div class="stat-item">
+        <h3 id="unreadBooks">2</h3>
+        <p>To Read</p>
+      </div>
+    </div>
+    <div class="controls">
+      <button class="add-book-btn" id="addBookBtn">+ Add New Book</button>
+    </div>
+    <div class="library-grid" id="libraryGrid"></div>
+  </div>
+
+  <!-- Modal -->
+  <div class="modal" id="bookModal">
+    <div class="modal-content">
+      <span class="close" id="closeModal">x</span>
+      <h2>Add New Book</h2>
+      <form id="bookForm">
+        <div class="form-group"></div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
